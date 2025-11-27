@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Gestión</title>
+    
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #f3f4f6;
+            --accent-color: #ec4899;
+            --text-color: #1f2937;
+            --sidebar-width: 260px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="utils/authService.js"></script>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Topbar.js"></script>
+    <script type="text/babel" src="components/StatsCard.js"></script>
+    <script type="text/babel" src="components/LineChart.js"></script>
+    <script type="text/babel" src="components/PieChart.js"></script>
+    <script type="text/babel" src="components/UserActivityTable.js"></script>
+    <script type="text/babel" src="dashboard-app.js"></script>
+</body>
+</html>
